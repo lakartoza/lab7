@@ -1,6 +1,6 @@
 var projects = require('../projects.json')['projects'];
 
-exports.projectInfo = function(req, res) { 
+exports.projectInfo = function(req, res) {
 	var projectID = req.params.id;
 	var project = getProjectData(projectID);
   	res.json(project);
